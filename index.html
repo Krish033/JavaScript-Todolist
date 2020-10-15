@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>TODO List</h1>
+  <section id="wrapper">
+    <div id="add__todo">
+      <input class="input add__list" type="text" placeholder="Add Todo" />
+      <button class="add__btn" type="submit">Add</button>
+    </div>
+    <div id="todo__container">
+      <div class="current__todo">
+        <h1 style="margin-left: 10px; font-size: .7rem;">Current Todo</h1>
+      </div>
+      <br />
+      <h1 class="head" style="margin-left: 10px;">To Complete</h1>
+      <p style="margin-left: 10px; font-size: .7rem">Hi boss, your todos are</p>
+      <p style="margin-bottom: 10px;" class="hr"></p>
+      <div class="render">
+      </div>
+    </div>
+  </section>
+  <div class="select">
+    <select name="todos" class="filter-todos">
+      <option value="all">All</option>
+      <option value="completed">Completed</option>
+      <option value="uncompleted">Uncompleted</option>
+    </select>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+
+</html>
